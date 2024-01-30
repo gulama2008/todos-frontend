@@ -1,6 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import todosList from "../data/todos.json";
-import categoryList from "../data/categories.json";
 import { TodoService } from "../services/todos-service";
 import { CategoryService } from "../services/categories-service";
 export const TodosContext = createContext<any>(null);

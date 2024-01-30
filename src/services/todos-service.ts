@@ -1,16 +1,17 @@
 import { Todo } from "../context/TodosContextProvider";
+const url = "https://todos-backend-v1-d34dde2be7d3.herokuapp.com";
 export interface NewTodoParams {
   content: string;
   categoryId: number | null;
 }
 export class TodoService {
   public static async get(): Promise<any[]> {
-    const response = await fetch("http://localhost:8080/todos");
+    const response = await fetch(`${url}/todos`);
     return await response.json();
   }
 
   public static async getById(id: number): Promise<Todo> {
-    const response = await fetch(`http://localhost:8080/todos/${id}`);
+    const response = await fetch(`${url}/todos/${id}`);
     if (!response.ok) {
       throw new Error(`Could not find todo with id ${id}`);
     }
@@ -18,7 +19,7 @@ export class TodoService {
   }
 
   public static async createTodo(data: NewTodoParams): Promise<Todo> {
-    const response = await fetch("http://localhost:8080/todos", {
+    const response = await fetch(`${url}/todos`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +33,7 @@ export class TodoService {
   }
 
   public static async deleteTodo(id: number) {
-    const response = await fetch(`http://localhost:8080/todos/${id}`, {
+    const response = await fetch(`${url}/todos/${id}`, {
       method: "DELETE",
     });
     if (!response.ok) {
@@ -43,7 +44,7 @@ export class TodoService {
   public static async updateTodo(id: number, data: any) {
     console.log("test");
 
-    const response = await fetch(`http://localhost:8080/todos/${id}`, {
+    const response = await fetch(`${url}/todos/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
