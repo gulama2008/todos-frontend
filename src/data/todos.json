@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "content":"build project",
+        "isArchived":false,
+        "isCompleted":false,
+        "category":"study"
+    },
+    {
+      "id": 2,
+      "content": "codewar",
+      "isArchived": false,
+      "isCompleted": false,
+      "category": "study"
+    },
+    {
+      "id": 3,
+      "content": "buy fruits",
+      "isArchived": false,
+      "isCompleted": false,
+      "category": "household"
+    }
+]

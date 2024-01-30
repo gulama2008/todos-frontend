@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    gap:5px;
+    padding:3px 20px 3px 20px;
+    cursor: pointer;
+    color: #a2aec6;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.active{
+    background-color: #2d4070;
+    color: #e9fdff;
+}
+
+.container:hover{
+    background-color: #2d4070;
+    color: #e9fdff;
+}
+
+.title{
+    width: 200px;
+}
+.number{
+    width: 30px;
+}
+.delete{
+    width: 20px;
+}
