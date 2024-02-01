@@ -14,13 +14,15 @@ export interface TodoProps {
   todo: Todo;
 }
 const TodoItem = ({ todo }: TodoProps) => {
+  console.log(todo);
+  
   const { categories, changeTodos, setChangeTodos } = useContext(TodosContext);
   const [todoContent, setTodoContent] = useState<string>("");
   const [todoCategoryId, setTodoCategoryId] = useState<number>(
     todo.category?.id
   );
   // const [todoCategoryName, setTodoCategoryName] = useState<string>("");
-  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [isChecked, setIsChecked] = useState<boolean>(todo.completed);
   const [toShowEdit, setToShowEdit] = useState<boolean>(true);
   useEffect(() => {
     setTodoContent(todo.content);
