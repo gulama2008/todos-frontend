@@ -2,7 +2,7 @@
 
 This is an application that allows people to track, add, and delete tasks as well as manage categories of tasks.
 
-### 🚀 [Launch Live Todos App](https://todos-app-siyu.netlify.app/)
+### 🚀 [Launch Live Todos App](http://todos.siyuliuweb.com/)
 
 ## Table of Contents
 
@@ -61,13 +61,10 @@ This is an application that allows people to track, add, and delete tasks as wel
 ![edit](./src/assets/edit_todo.png)
 - When clicking the "Add new" button, a new line will be shown on the top of the list with an empty input box for the content and a select box for the category, the user can click the save icon to save the new todo, or click the delete icon to delete it.
 ![add](./src/assets/new.png)
-
-## Known Issues 
- The speed of the deployed app is a bit slow due to location of the server (in US) and the free version of database
+- This project has been deployed on aws so speed-wise it is doing well
 
 ## Future Goals
 - Add validation on creating new category to prevent adding duplicate categories
 - Add test
-- Maybe will try to deploy it on AWS to optimise the speed
 
 
