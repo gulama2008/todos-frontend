@@ -1,8 +1,8 @@
 import { Todo } from "../context/TodosContextProvider";
 // const url = "http://todos.siyuliusandbox.com";
-// const url = "http://3.106.245.135:80";
+const url = "http://13.55.212.3:8080";
 // const url = "http://localhost:8080";
-const url="https://todos-backend-v1-d34dde2be7d3.herokuapp.com"
+// const url="https://todos-backend-v1-d34dde2be7d3.herokuapp.com"
 export interface NewTodoParams {
   content: string;
   categoryId: number | null;
